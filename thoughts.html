@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYBER_SPACE - 思绪</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+    
+    <nav>
+        <div class="logo">寰宇的空间</div>
+        <ul class="nav-links">
+            <li><a href="index.html">首页：个人介绍</a></li>
+            <li><a href="hometown.html">乡土记忆</a></li>
+            <li><a href="gallery.html">摄影随拍</a></li>
+            <li><a href="thoughts.html" class="active">人生感悟</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 class="page-title">
+            <span>人</span><span>生</span><span>感</span><span>悟</span>
+        </h1>
+        
+        <div class="card">
+            <h2> 人生感悟</h2>
+            <p>在这个信息过载的时代，保持思考的能力显得尤为珍贵。这里是我整理思绪、反思成长的空间。</p>
+            <p>每一篇文章都是一次对话——与自己对话，也期待与你的共鸣。</p>
+            
+            <div class="article-list">
+                <div class="article-item">
+                    <div class="article-date">2025年11月14号</div>
+                    <div class="article-title">再游西关环岛</div>
+                    <div class="article-excerpt">下午没课，闲来无事的我便去昌平县城转了一圈，路过西关环岛偶有所感，便胡乱写上几笔吧。
+​第一次路过西关环岛已经是两年前的国庆了。当时我和好友岳岭去十三陵游玩，回来的公交上见到西关环岛立着一个宏伟的人物雕塑，我和岳岭都不认识这个人，还是一位慈祥的老者告诉我们这是闯王李自成的雕像。当时我感觉有点好笑，这雕像居然离十三陵这么近，合计着闯王来给老朱家看坟来了，颇有一种黑色幽默的感觉。当时我还想拍照留念来着，可惜车速太快未能如我所愿，后面只能安慰自己来日方长，下次有机会再来拍照留念吧。
+​过了很久我也没想起来过来看看闯王，再来时已经不见闯王了。上网一搜才知道闯王雕像已经迁出北京，我也没能如愿。三百多年前闯王被清军赶出了北京，三百多年以后闯王又一次被赶出了北京，这位农民义军领袖或许也想不到他生前身后会被赶出北京两次，这也算是历史给他开的小小的玩笑吧。
+​今天是我第三次来到西关环岛，北京的秋风微凉，很容易唤起人的思绪。我突然想起初中自己特别喜欢看历史书，哪怕现在还记得教科书上的关于闯王的童谣。杀牛羊，备酒浆，开了城门迎闯王，闯王来时不纳粮。当时没多大的我或许想不到，很多年以后，我居然和闯王匆匆见了一面，虽然可能也是最后一面了。和我的人生一样，很多人也是见了最后一面，从此就杳无音讯了。人生多离别，动如参与商。
+​最后留一张今天拍的西关环岛的晚霞，献给看到的人，也献给我的过往。</div>
+                 <div class="photo-item">
+                    <img src=14.jpg alt="头像">
+                    <div class="photo-info">
+                        <strong>西关环岛的晚霞</strong><br>
+                        摄于2025年10月
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="highlight">// 文字是思维的载体 //</div>
+        <p>&#169; 寰宇</p>
+    </footer>
+
+    <script>
+        const starsContainer = document.getElementById('stars');
+        for (let i = 0; i < 100; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            star.style.left = Math.random() * 100 + '%';
+            star.style.top = Math.random() * 100 + '%';
+            star.style.animationDelay = Math.random() * 2 + 's';
+            starsContainer.appendChild(star);
+        }
+    </script>
+</body>
+</html>

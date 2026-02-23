@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYBER_SPACE - 影集</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+    
+    <nav>
+        <div class="logo">寰宇的空间</div>
+        <ul class="nav-links">
+            <li><a href="index.html">首页：个人介绍</a></li>
+            <li><a href="hometown.html">乡土记忆</a></li>
+            <li><a href="gallery.html" class="active">摄影随拍</a></li>
+            <li><a href="thoughts.html">人生感悟</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 class="page-title">
+            <span>摄</span><span>影</span><span>随</span><span>拍</span>
+        </h1>
+        
+        <div class="card">
+            <h2> 摄影随拍</h2>
+            <p>每一张照片都是时间的切片，捕捉了那一刻独特的光影与情感。在这里，我记录下生活中的美丽瞬间。</p>
+            <p>从城市的霓虹灯火到自然的壮丽景色，从微小的细节到宏大的场景，镜头是我观察世界的眼睛。</p>
+            
+                   <div class="card">
+            <h2> 摄影作品 </h2>
+                 <div class="photo-item">
+                    <img src=9.jpg alt="头像">
+                    <div class="photo-info">
+                        <strong>新首钢大桥的傍晚</strong><br>
+                        摄于2025年12月
+                    </div>
+    </div>
+
+           
+    <h2></h2>
+    <h2>摄影作品</h2>
+                 <div class="photo-item">
+                    <img src=8.jpg alt="头像">
+                    <div class="photo-info">
+                        <strong>华北电力大学的夜晚</strong><br>
+                        摄于2024年12月
+                    </div>
+                       <h2></h2>
+                          </div>
+    <h2>摄影作品</h2>
+                 <div class="photo-item">
+                    <img src=10.jpg alt="头像">
+                    <div class="photo-info">
+                        <strong>华北电力大学的星轨</strong><br>
+                        摄于2025年9月
+                    </div>
+                      <h2></h2>
+                          </div>
+                          <h2>摄影作品</h2>
+                 <div class="photo-item">
+                    <img src=11.jpg alt="头像">
+                    <div class="photo-info">
+                        <strong>百望山远望</strong><br>
+                        摄于2025年4月
+                    </div>
+                      <h2></h2>
+                          </div>
+                          <h2>摄影作品</h2>
+                 <div class="photo-item">
+                    <img src=12.jpg alt="头像">
+                    <div class="photo-info">
+                        <strong>灯火通明的北京cbd</strong><br>
+                        摄于2025年12月
+                    </div>
+                      <h2></h2>
+                          </div>
+                                  <h2></h2>
+                          </div>
+                          <h2>摄影作品</h2>
+                 <div class="photo-item">
+                    <img src=13.jpg alt="头像">
+                    <div class="photo-info">
+                        <strong>微观世界</strong><br>
+                        摄于2025年11月
+                    </div>
+                      <h2></h2>
+                          </div>
+                          
+                    
+
+    <footer>
+        <div class="highlight">// 每一帧都是时光的印记 //</div>
+        <p>&#169; 寰宇</p>
+    </footer>
+
+    <script>
+        const starsContainer = document.getElementById('stars');
+        for (let i = 0; i < 100; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            star.style.left = Math.random() * 100 + '%';
+            star.style.top = Math.random() * 100 + '%';
+            star.style.animationDelay = Math.random() * 2 + 's';
+            starsContainer.appendChild(star);
+        }
+    </script>
+</body>
+</html>
