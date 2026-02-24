@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>寰宇的个人博客- 影集</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+    
+ <nav>
+        <div class="logo">寰宇的个人博客</div>
+        
+        <!-- 手机端菜单按钮 -->
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <!-- 桌面端导航 -->
+        <ul class="nav-links-desktop">
+            <li><a href="index.html">首页</a></li>
+            <li class="has-submenu">
+                <a href="hometown.html" class=>乡土记忆</a>
+                <div class="sub-menu">
+                    <a href="customs.html">风土人情</a>
+                    <a href="landscape.html">故乡风貌</a>
+                </div>
+            </li>
+            <li><a href="gallery.html">摄影随拍</a></li>
+            <li><a href="thoughts.html">人生感悟</a></li>
+        </ul>
+        
+        <!-- 手机端导航 -->
+        <div class="nav-links-mobile" id="navMobile">
+            <a href="index.html">首页</a>
+            <a href="hometown.html" class="active">乡土记忆</a>
+            <div class="sub-menu show">
+                <a href="customs.html">风土人情</a>
+                <a href="landscape.html">故乡风貌</a>
+            </div>
+            <a href="gallery.html">摄影随拍</a>
+            <a href="thoughts.html">人生感悟</a>
+        </div>
+    </nav>
+
+
+
+    <div class="container">
+        <h1 class="page-title">
+            <span>摄</span><span>影</span><span>随</span><span>拍</span>
+        </h1>
+        
+        <div class="card">
+            <h2> 摄影随拍</h2>
+            <p>每一张照片都是时间的切片，捕捉了那一刻独特的光影与情感。在这里，我记录下生活中的美丽瞬间。</p>
+            <p>从城市的霓虹灯火到自然的壮丽景色，从微小的细节到宏大的场景，镜头是我观察世界的眼睛。</p>
+            
+                   <div class="card">
+            <h2> 摄影作品 </h2>
+                 <div class="photo-item">
+                    <img src=9.jpg alt="头像">
+                    <div class="photo-info">
+                        <strong>新首钢大桥的傍晚</strong><br>
+                        摄于2025年12月
+                    </div>
+    </div>
+                        <h2>摄影作品</h2>
+                 <div class="photo-item">
+                    <img src=11.jpg alt="头像">
+                    <div class="photo-info">
+                        <strong>百望山远望</strong><br>
+                        摄于2025年4月
+                    </div>
+                    
+                    </div>
+
+                          <h2>摄影作品</h2>
+                 <div class="photo-item">
+                    <img src=12.jpg alt="头像">
+                    <div class="photo-info">
+                        <strong>灯火通明的北京cbd</strong><br>
+                        摄于2025年12月
+                    </div>
+                     </div>
+                          <h2>摄影作品</h2>
+                 <div class="photo-item">
+                    <img src=13.jpg alt="头像">
+                    <div class="photo-info">
+                        <strong>微观世界</strong><br>
+                        摄于2025年11月
+                    </div>
+</div>
+                        <h2>摄影作品</h2>
+                 <div class="photo-item">
+                    <img src=18.jpg alt="华电">
+                    <div class="photo-info">
+                        <strong>华电夜景</strong><br>
+                        摄于2025年3月
+                    </div>
+                </div>
+                    
+
+    <footer>
+        <div class="highlight">// 每一帧都是时光的印记 //</div>
+        <p>&#169; 寰宇</p>
+    </footer>
+
+    <script>
+        const starsContainer = document.getElementById('stars');
+        for (let i = 0; i < 100; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            star.style.left = Math.random() * 100 + '%';
+            star.style.top = Math.random() * 100 + '%';
+            star.style.animationDelay = Math.random() * 2 + 's';
+            starsContainer.appendChild(star);
+        }
+    </script>
+</body>
+</html>
