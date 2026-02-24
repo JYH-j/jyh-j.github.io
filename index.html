@@ -88,7 +88,33 @@
         <p>&#169; 寰宇</p>
     </footer>
 
-    <script>
+        <script>
+        // 手机端菜单切换
+        const menuToggle = document.getElementById('menuToggle');
+        const navMobile = document.getElementById('navMobile');
+        
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navMobile.classList.toggle('active');
+        });
+
+        // 标签页切换
+        function switchTab(tabId) {
+            // 隐藏所有标签内容
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            // 移除所有按钮的active状态
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // 显示目标标签
+            document.getElementById(tabId).classList.add('active');
+            // 激活对应按钮
+            event.target.classList.add('active');
+        }
+
         // 生成星空
         const starsContainer = document.getElementById('stars');
         for (let i = 0; i < 100; i++) {
@@ -96,9 +122,11 @@
             star.className = 'star';
             star.style.left = Math.random() * 100 + '%';
             star.style.top = Math.random() * 100 + '%';
+            star.style.setProperty('--twinkle-speed', (Math.random() * 2 + 1) + 's');
             star.style.animationDelay = Math.random() * 2 + 's';
             starsContainer.appendChild(star);
         }
     </script>
+</body>
 </body>
 </html>
