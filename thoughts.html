@@ -3,21 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CYBER_SPACE - 思绪</title>
+    <title>寰宇的个人博客</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="stars" id="stars"></div>
-    
-    <nav>
-        <div class="logo">寰宇的空间</div>
-        <ul class="nav-links">
-            <li><a href="index.html">首页：个人介绍</a></li>
-            <li><a href="hometown.html">乡土记忆</a></li>
+     <nav>
+        <div class="logo">寰宇的个人博客</div>
+        
+        <!-- 手机端菜单按钮 -->
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <!-- 桌面端导航 -->
+        <ul class="nav-links-desktop">
+            <li><a href="index.html">首页</a></li>
+            <li class="has-submenu">
+                <a href="hometown.html" class=>乡土记忆</a>
+                <div class="sub-menu">
+                    <a href="hometown/customs.html">风土人情</a>
+                    <a href="hometown/landscape.html">故乡风貌</a>
+                </div>
+            </li>
             <li><a href="gallery.html">摄影随拍</a></li>
-            <li><a href="thoughts.html" class="active">人生感悟</a></li>
+            <li><a href="thoughts.html">人生感悟</a></li>
         </ul>
+        
+        <!-- 手机端导航 -->
+        <div class="nav-links-mobile" id="navMobile">
+            <a href="index.html">首页</a>
+            <a href="hometown.html" class="active">乡土记忆</a>
+            <div class="sub-menu show">
+                <a href="hometown/customs.html">风土人情</a>
+                <a href="hometown/landscape.html">故乡风貌</a>
+            </div>
+            <a href="gallery.html">摄影随拍</a>
+            <a href="thoughts.html">人生感悟</a>
+        </div>
     </nav>
+
+
+
 
     <div class="container">
         <h1 class="page-title">
@@ -32,6 +61,18 @@
             <div class="article-list">
                 <div class="article-item">
                     <div class="article-date">2025年11月14号</div>
+                    <div class="article-title">华电初秋的星轨</div>
+                    <div class="article-excerpt">天气很好，在初秋的北京用两个小时得到了这张星轨作品。也体会到“寄蜉蝣于天地，渺沧海之一粟”的感觉了。</div>
+                 <div class="photo-item">
+                    <img src=10.jpg alt="头像">
+                    <div class="photo-info">
+                        <strong>西关环岛的晚霞</strong><br>
+                        摄于2025年9月
+                    </div>
+                </div>
+                 <div class="article-list">
+                <div class="article-item">
+                    <div class="article-date">2025年10月14号</div>
                     <div class="article-title">再游西关环岛</div>
                     <div class="article-excerpt">下午没课，闲来无事的我便去昌平县城转了一圈，路过西关环岛偶有所感，便胡乱写上几笔吧。
 ​第一次路过西关环岛已经是两年前的国庆了。当时我和好友岳岭去十三陵游玩，回来的公交上见到西关环岛立着一个宏伟的人物雕塑，我和岳岭都不认识这个人，还是一位慈祥的老者告诉我们这是闯王李自成的雕像。当时我感觉有点好笑，这雕像居然离十三陵这么近，合计着闯王来给老朱家看坟来了，颇有一种黑色幽默的感觉。当时我还想拍照留念来着，可惜车速太快未能如我所愿，后面只能安慰自己来日方长，下次有机会再来拍照留念吧。
@@ -44,7 +85,6 @@
                         <strong>西关环岛的晚霞</strong><br>
                         摄于2025年10月
                     </div>
-                </div>
                 </div>
             </div>
         </div>

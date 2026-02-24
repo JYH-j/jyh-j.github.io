@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>寰宇的个人博客 - 家乡</title>
-    <link rel="stylesheet" href="style.css">
+    <title>寰宇的个人博客 - 故乡风貌</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <div class="stars" id="stars"></div>
     
- <nav>
+      <nav>
         <div class="logo">寰宇的个人博客</div>
         
         <!-- 手机端菜单按钮 -->
@@ -45,41 +45,66 @@
             <a href="thoughts.html">人生感悟</a>
         </div>
     </nav>
-
-
-
     <div class="container">
         <h1 class="page-title">
-            <span>乡</span><span>土</span><span>记</span><span>忆</span>
+            <span>故</span><span>乡</span><span>风</span><span>貌</span>
         </h1>
         
         <div class="card">
-            <h2> 定位信息 </h2>
-            <div class="location-marker">
-                <div>
-                    <div class="coordinates">28°03′17″N</div>
-                    <div class="coordinates">115°32′46″E</div>
+            <h2>// 城市的四季 //</h2>
+            <p>故乡的四季，各有韵味。春日的嫩绿、夏日的浓荫、秋日的金黄、冬日的素白，每一季都为这座城市披上不同的色彩。</p>
+            <p>漫步在城市的街道，你会看到古老与现代的完美融合：青砖灰瓦的民居与玻璃幕墙的摩天大楼并肩而立，诉说着时光的流转与时代的变迁。</p>
+        </div>
+
+        <div class="card">
+            <h2>// 城市地标 //</h2>
+            <div class="landscape-grid">
+                <div class="landscape-card">
+                    <img src=2.jpg alt="商业中心">
+                    <div class="landscape-card-content">
+                        <h3>三皇里</h3>
+                    </div>
                 </div>
-                <div style="font-size: clamp(3rem, 8vw, 5rem);">&#127757;</div>
-            </div>
-            
-             <div class=<p>这里是我的故乡——如此生活十八年</p></div>
-           
-            
-            <div class="location-marker">
-              樟树市位于江西省中部，地处赣江中游，东邻南昌市，南接丰城市，西靠靖安县，北毗高安市。
+                <div class="landscape-card">
+                    <img src="3.jpg" alt="老街">
+                    <div class="landscape-card-content">
+                        <h3>大码头</h3>
+                    </div>
+                </div>
+                <div class="landscape-card">
+                    <img src="4.jpg" alt="河流">
+                    <div class="landscape-card-content">
+                        <h3>永泰塔</h3>
+                    </div>
+                </div>
+                <div class="landscape-card">
+                    <img src="5.JPG" alt="公园">
+                    <div class="landscape-card-content">
+                        <h3>樟树二中</h3>
+                    </div>
+                </div>
+                <div class="landscape-card">
+                    <img src="6.JPG" alt="绿道">
+                    <div class="landscape-card-content">
+                        <h3>药都公园</h3>
+                    </div>
+                </div>
+                <div class="landscape-card">
+                    <img src="7.JPG" alt="广场">
+                    <div class="landscape-card-content">
+                        <h3>樟树电视塔</h3>
+                    </div>
+                </div>
             </div>
         </div>
 
 
-
     <footer>
-        <div class="highlight">// 故乡是心灵的坐标 //</div>
+        <div class="highlight">// 故乡，是永远看不够的风景 //</div>
         <p>&#169; 2024 CYBER_SPACE</p>
     </footer>
 
     <script>
-        // 手机端菜单切换
         const menuToggle = document.getElementById('menuToggle');
         const navMobile = document.getElementById('navMobile');
         
@@ -88,24 +113,6 @@
             navMobile.classList.toggle('active');
         });
 
-        // 标签页切换
-        function switchTab(tabId) {
-            // 隐藏所有标签内容
-            document.querySelectorAll('.tab-content').forEach(tab => {
-                tab.classList.remove('active');
-            });
-            // 移除所有按钮的active状态
-            document.querySelectorAll('.tab-btn').forEach(btn => {
-                btn.classList.remove('active');
-            });
-            
-            // 显示目标标签
-            document.getElementById(tabId).classList.add('active');
-            // 激活对应按钮
-            event.target.classList.add('active');
-        }
-
-        // 生成星空
         const starsContainer = document.getElementById('stars');
         for (let i = 0; i < 100; i++) {
             const star = document.createElement('div');
@@ -119,4 +126,3 @@
     </script>
 </body>
 </html>
-

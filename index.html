@@ -10,16 +10,43 @@
     <!-- 星空背景 -->
     <div class="stars" id="stars"></div>
     
-    <!-- 导航栏 -->
-    <nav>
-        <div class="logo">寰宇的空间</div>
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">首页：个人介绍</a></li>
-            <li><a href="hometown.html">乡土记忆</a></li>
+ <nav>
+        <div class="logo">寰宇的个人博客</div>
+        
+        <!-- 手机端菜单按钮 -->
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <!-- 桌面端导航 -->
+        <ul class="nav-links-desktop">
+            <li><a href="index.html">首页</a></li>
+            <li class="has-submenu">
+                <a href="hometown.html" class=>乡土记忆</a>
+                <div class="sub-menu">
+                    <a href="customs.html">风土人情</a>
+                    <a href="landscape.html">故乡风貌</a>
+                </div>
+            </li>
             <li><a href="gallery.html">摄影随拍</a></li>
             <li><a href="thoughts.html">人生感悟</a></li>
         </ul>
+        
+        <!-- 手机端导航 -->
+        <div class="nav-links-mobile" id="navMobile">
+            <a href="index.html">首页</a>
+            <a href="hometown.html" class="active">乡土记忆</a>
+            <div class="sub-menu show">
+                <a href="customs.html">风土人情</a>
+                <a href="landscape.html">故乡风貌</a>
+            </div>
+            <a href="gallery.html">摄影随拍</a>
+            <a href="thoughts.html">人生感悟</a>
+        </div>
     </nav>
+
 
     <div class="container">
         <h1 class="page-title">

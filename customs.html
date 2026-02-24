@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>寰宇的个人博客 - 风土人情</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+    
+    <nav>
+        <div class="logo">寰宇的个人博客</div>
+        
+        <!-- 手机端菜单按钮 -->
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <!-- 桌面端导航 -->
+        <ul class="nav-links-desktop">
+            <li><a href="index.html">首页</a></li>
+            <li class="has-submenu">
+                <a href="hometown.html" class=>乡土记忆</a>
+                <div class="sub-menu">
+                    <a href="customs.html">风土人情</a>
+                    <a href="landscape.html">故乡风貌</a>
+                </div>
+            </li>
+            <li><a href="gallery.html">摄影随拍</a></li>
+            <li><a href="thoughts.html">人生感悟</a></li>
+        </ul>
+        
+        <!-- 手机端导航 -->
+        <div class="nav-links-mobile" id="navMobile">
+            <a href="index.html">首页</a>
+            <a href="hometown.html" class="active">乡土记忆</a>
+            <div class="sub-menu show">
+                <a href="customs.html">风土人情</a>
+                <a href="landscape.html">故乡风貌</a>
+            </div>
+            <a href="gallery.html">摄影随拍</a>
+            <a href="thoughts.html">人生感悟</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="page-title">
+            <span>风</span><span>土</span><span>人</span><span>情</span>
+        </h1>
+        
+        <div class="card">
+            <h2>// 烟火人间 //</h2>
+            <p>每一座城市都有自己独特的气质，而最动人的，莫过于藏在市井生活中的风土人情。在这里，时间仿佛慢了下来，人与人之间的连接变得纯粹而温暖。</p>
+            <p>清晨的菜市场，叫卖声此起彼伏；午后的茶馆里，老人们悠闲地摆起龙门阵；夜幕降临的夜市，升腾起诱人的烟火气……这些平凡而真实的场景，构成了这座城市最生动的表情。</p>
+        </div>
+
+        <div class="card">
+            <h2>// 传统节庆 //</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">&#127982;</div>
+                    <div class="feature-title">元宵灯会</div>
+                    <div class="feature-desc">万家灯火，照亮团圆的夜</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">&#128009;</div>
+                    <div class="feature-title">端午龙舟</div>
+                    <div class="feature-desc">江上竞渡，传承千年的勇气</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">&#127765;</div>
+                    <div class="feature-title">中秋赏月</div>
+                    <div class="feature-desc">月圆人圆，寄托思念与期盼</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">&#129512;</div>
+                    <div class="feature-title">新春庙会</div>
+                    <div class="feature-desc">热闹非凡，辞旧迎新的仪式</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>// 舌尖上的乡愁 //</h2>
+            <p>故乡的味道，是刻在骨子里的记忆。那一碗热气腾腾的担担面，那串滋滋冒油的烤串，那口香甜软糯的桂花糕，承载着太多关于家的回忆。</p>
+            
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">&#129375;</div>
+                    <div class="feature-title">手工小吃</div>
+                    <div class="feature-desc"></div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">&#9749;</div>
+                    <div class="feature-title">盖碗茶香</div>
+                    <div class="feature-desc">一茶一坐的悠闲时光</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">&#127858;</div>
+                    <div class="feature-title">家常味道</div>
+                    <div class="feature-desc">最抚凡人心的温度</div>
+                </div>
+            </div>
+        </div>
+
+
+    <footer>
+        <div class="highlight">// 市井烟火，最是动人 //</div>
+        <p>&#169; 2024 CYBER_SPACE</p>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navMobile = document.getElementById('navMobile');
+        
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navMobile.classList.toggle('active');
+        });
+
+        const starsContainer = document.getElementById('stars');
+        for (let i = 0; i < 100; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            star.style.left = Math.random() * 100 + '%';
+            star.style.top = Math.random() * 100 + '%';
+            star.style.setProperty('--twinkle-speed', (Math.random() * 2 + 1) + 's');
+            star.style.animationDelay = Math.random() * 2 + 's';
+            starsContainer.appendChild(star);
+        }
+    </script>
+</body>
+</html>
