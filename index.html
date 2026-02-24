@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>寰宇的空间 - 首页</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 星空背景 -->
+    <div class="stars" id="stars"></div>
+
+        
+        <nav>
+        <div class="logo">寰宇的个人博客</div>
+        
+        <!-- 手机端菜单按钮 -->
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <!-- 桌面端导航 -->
+        <ul class="nav-links-desktop">
+            <li><a href="index.html">首页</a></li>
+            <li class="has-submenu">
+                <a href="hometown.html" class=>乡土记忆</a>
+                <div class="sub-menu">
+                    <a href="customs.html">风土人情</a>
+                    <a href="landscape.html">故乡风貌</a>
+                </div>
+            </li>
+            <li><a href="gallery.html">摄影随拍</a></li>
+            <li><a href="thoughts.html">人生感悟</a></li>
+        </ul>
+        
+        <!-- 手机端导航 -->
+        <div class="nav-links-mobile" id="navMobile">
+            <a href="index.html">首页</a>
+            <a href="hometown.html" class="active">乡土记忆</a>
+            <div class="sub-menu show">
+                <a href="customs.html">风土人情</a>
+                <a href="landscape.html">故乡风貌</a>
+            </div>
+            <a href="gallery.html">摄影随拍</a>
+            <a href="thoughts.html">人生感悟</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="page-title">
+            <span>纵</span><span>观</span><span>寰</span><span>宇</span>
+        </h1>
+        
+        <div class="card">
+            <div class="avatar-section">
+                <div class="avatar">
+                    <img src=1.jpg alt="头像">
+                </div>
+                <div class="about-content">
+                    <h2> 个人介绍 </h2>
+                    <p>欢迎来到寰宇的个人博客。我是<strong>寰宇</strong>，在这个虚拟维度中，我将与你分享我的故事，作品和思考。</p>
+                    
+                    <div class="stats">
+                        <div class="stat-item">
+                            <div class="stat-number">历史爱好者</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">小镇做题家</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">万青歌迷</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">“罗大佐”</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="highlight">// 欢迎访问寰宇的个人博客 //</div>
+        <a href="mailto:j3083669558@outlook.com">联系寰宇</a>
+        <p>&#169; 寰宇</p>
+    </footer>
+
+    <script>
+        // 生成星空
+        const starsContainer = document.getElementById('stars');
+        for (let i = 0; i < 100; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            star.style.left = Math.random() * 100 + '%';
+            star.style.top = Math.random() * 100 + '%';
+            star.style.animationDelay = Math.random() * 2 + 's';
+            starsContainer.appendChild(star);
+        }
+    </script>
+</body>
+</html>
